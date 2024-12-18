@@ -4,7 +4,7 @@ anaconda-client==1.7.2
 anaconda-navigator==1.10.0
 anaconda-project==0.8.3
 argh==0.26.2
-argon2-cffi @ file:///C:/ci/argon2-cffi_1596828585465/work
+argon2-cffi==20.1.0
 asn1crypto @ file:///tmp/build/80754af9/asn1crypto_1596577642040/work
 astroid @ file:///C:/ci/astroid_1592487315634/work
 astropy==4.0.2
@@ -168,7 +168,7 @@ pyflakes==2.2.0
 pygments==2.18.0
 pylint @ file:///C:/ci/pylint_1598617153160/work
 PyNaCl @ file:///C:/ci/pynacl_1595000047588/work
-pyodbc===4.0.0-unsupported
+pyodbc===4.0.30
 pyOpenSSL @ file:///tmp/build/80754af9/pyopenssl_1594392929924/work
 pyparsing==2.4.7
 pyreadline==2.1
