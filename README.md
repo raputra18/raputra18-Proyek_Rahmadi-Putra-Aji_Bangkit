@@ -15,87 +15,80 @@ To set up the environment using Anaconda, follow these steps:
 1. Create a new conda environment:
    ```bash
    conda create --name bike-sharing python=3.9
-Activate the environment:
-
-bash
-Salin kode
-conda activate bike-sharing
-Install the required dependencies:
-
-bash
-Salin kode
-pip install -r requirements.txt
-Setup Environment - Shell/Terminal
+2. Activate the environment:
+   ```bash
+   conda activate bike-sharing
+3. Install the required dependencies:
+   ```bash
+   pip install -r requirements.txt
+   
+## Setup Environment - Shell/Terminal
 If you're using the terminal, you can set up the environment using the following commands:
 
-Create and navigate to your project directory:
+1. Create and navigate to your project directory:
+   ```bash
+   mkdir bike-sharing-project
+   cd bike-sharing-project
+2. Install pipenv dependencies and activate the virtual environment:
+   ```bash
+   pipenv install
+   pipenv shell
+   pip install -r requirements.txt
 
-bash
-Salin kode
-mkdir bike-sharing-project
-cd bike-sharing-project
-Install pipenv dependencies and activate the virtual environment:
-
-bash
-Salin kode
-pipenv install
-pipenv shell
-pip install -r requirements.txt
-Requirements
+## Requirements
 Ensure the following Python libraries are installed:
 
-matplotlib==3.7.5
-pandas==2.0.3
-seaborn==0.11.0
-streamlit==1.40.1
-Running the Streamlit App
-To run the Streamlit app, execute the following command:
+- matplotlib==3.7.5
+- pandas==2.0.3
+- seaborn==0.11.0
+- streamlit==1.40.1
 
-bash
-Salin kode
-streamlit run app.py
+## Running the Streamlit App
+To run the Streamlit app, execute the following command:
+- ```bash
+   streamlit run app.py
 This will launch the dashboard in your browser.
 
-Dataset
+## Dataset
 This project uses two datasets for analysis:
 
-day.csv: Contains daily bike rental data, including weather conditions, temperature, humidity, etc.
-hour.csv: Contains hourly bike rental data with similar features.
-Project Files
-app.py: This file contains the main logic for the Streamlit dashboard. It includes data loading, data cleaning, and visualizations of how different factors (weather, temperature, workday, season, etc.) impact bike rental numbers.
-notebook.ipynb: The Jupyter notebook includes detailed analysis of the data, including Exploratory Data Analysis (EDA) and insights into how weather, temperature, and other factors correlate with bike rentals.
-requirements.txt: This file lists the Python dependencies required to run the project.
-Data Cleaning and Analysis Process
-Data Cleaning:
+1. day.csv: Contains daily bike rental data, including weather conditions, temperature, humidity, etc.
+2. hour.csv: Contains hourly bike rental data with similar features.
+
+## Project Files
+- app.py: This file contains the main logic for the Streamlit dashboard. It includes data loading, data cleaning, and visualizations of how different factors (weather, temperature, workday, season, etc.) impact bike rental numbers.
+- notebook.ipynb: The Jupyter notebook includes detailed analysis of the data, including Exploratory Data Analysis (EDA) and insights into how weather, temperature, and other factors correlate with bike rentals.
+- requirements.txt: This file lists the Python dependencies required to run the project.
+
+## Data Cleaning and Analysis Process
+- Data Cleaning:
 Unnecessary columns are dropped (e.g., instant).
 Missing values are filled with the mean of the respective column.
-Exploratory Data Analysis (EDA):
+- Exploratory Data Analysis (EDA):
 Visualizations are used to analyze the distribution of bike rentals, weather, temperature, and other factors.
 Correlation analysis helps in understanding relationships between numerical variables.
-Visualization:
+- Visualization:
 A variety of plots are used, including boxplots, scatterplots, and heatmaps, to visually assess the impact of factors like weather, temperature, and workday on bike rentals.
 
-Example Visualizations
-Impact of Weather on Bike Rentals: Boxplot showing bike rentals across different weather conditions.
-Temperature vs. Bike Rentals: Scatterplot illustrating the relationship between temperature and bike rentals.
-Bike Rentals on Workdays vs. Weekends: Boxplot comparing rentals on workdays and weekends.
-Seasonal Impact on Bike Rentals: Boxplot showing the variation in bike rentals across different seasons.
-Running the Analysis Locally
-Install all dependencies using the setup instructions above.
+## Example Visualizations
+- Impact of Weather on Bike Rentals: Boxplot showing bike rentals across different weather conditions.
+- Temperature vs. Bike Rentals: Scatterplot illustrating the relationship between temperature and bike rentals.
+- Bike Rentals on Workdays vs. Weekends: Boxplot comparing rentals on workdays and weekends.
+- Seasonal Impact on Bike Rentals: Boxplot showing the variation in bike rentals across different seasons.
 
-Run the Streamlit app:
+## Running the Analysis Locally
+1. Install all dependencies using the setup instructions above.
+2. Run the Streamlit app:
+   ```bash
+   streamlit run app.py
+3. Open the provided URL in your browser to interact with the dashboard.
 
-bash
-Salin kode
-streamlit run app.py
-Open the provided URL in your browser to interact with the dashboard.
-
-Conclusion
+## Conclusion
 The analysis reveals key trends, such as how weather and temperature impact bike rentals. By understanding these trends, bike-sharing companies can better plan for peak times and improve their services.
 
 Feel free to explore and modify the project to gain further insights or test other hypotheses.
 
-Contact
-Name: Rahmadi Putra Aji
-Email: m008b4ky3624@bangkit.academy
-ID Dicoding: raputra
+## Contact
+- Name: Rahmadi Putra Aji
+- Email: m008b4ky3624@bangkit.academy
+- ID Dicoding: raputra
