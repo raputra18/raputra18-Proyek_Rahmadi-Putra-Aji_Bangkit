@@ -2,10 +2,15 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 import streamlit as st
+from pathlib import Path
+
+
+# Menentukan path relatif untuk file dataset
+dataset_path = Path(__file__).parent.parent / 'dataset'
 
 # Muat dataset
-day_data = pd.read_csv(r"D:\PERKULIAHAN TRIK21\MBKM 2\Proyek_Rahmadi Putra Aji_Bike-sharing-dataset\dataset\day.csv")
-hour_data = pd.read_csv(r"D:\PERKULIAHAN TRIK21\MBKM 2\Proyek_Rahmadi Putra Aji_Bike-sharing-dataset\dataset\hour.csv")
+day_data = pd.read_csv(dataset_path / "day.csv")
+hour_data = pd.read_csv(dataset_path / "hour.csv")
 
 # Pembersihan Data (Hapus kolom 'instant' yang tidak diperlukan)
 day_data.drop(columns=['instant'], inplace=True)
