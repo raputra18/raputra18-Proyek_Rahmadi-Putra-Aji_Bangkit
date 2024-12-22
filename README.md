@@ -14,25 +14,12 @@ To set up the environment using Anaconda, follow these steps:
 
 1. Create a new conda environment:
    ```bash
-   conda create --name bike-sharing python=3.9
-2. Activate the environment:
+   conda create --name bike-dashboard python=3.8
+2. Activate the virtual environment:
    ```bash
-   conda activate bike-sharing
+   conda activate bike-dashboard
 3. Install the required dependencies:
    ```bash
-   pip install -r requirements.txt
-   
-## Setup Environment - Shell/Terminal
-If you're using the terminal, you can set up the environment using the following commands:
-
-1. Create and navigate to your project directory:
-   ```bash
-   mkdir bike-sharing-project
-   cd bike-sharing-project
-2. Install pipenv dependencies and activate the virtual environment:
-   ```bash
-   pipenv install
-   pipenv shell
    pip install -r requirements.txt
 
 ## Requirements
