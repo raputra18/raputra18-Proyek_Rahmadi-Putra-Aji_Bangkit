@@ -78,8 +78,4 @@ Feel free to explore and modify the project to gain further insights or test oth
 ## Contact
 - Name: Rahmadi Putra Aji
 - Email: m008b4ky3624@bangkit.academy
-<<<<<<< HEAD
 - ID Dicoding: raputra
-=======
-- ID Dicoding: raputra
->>>>>>> e46f8a12dba6b20424f9d8f76c036df6f19e7723
